@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Fotos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Galeria de Fotos</h1>
+    <form id="uploadForm" enctype="multipart/form-data">
+        <label for="photo">Foto:</label>
+        <input type="file" id="photo" name="photo" accept="image/*" required>
+        <label for="description">Descrição:</label>
+        <input type="text" id="description" name="description" required>
+        <button type="submit">Enviar</button>
+    </form>
+    <div id="gallery"></div>
+    <script src="script.js"></script>
+</body>
+</html>
